@@ -223,6 +223,7 @@ CREATE TABLE `users` (
 						$d = file_put_contents($path, '');
 						feedbackAdmin('clear st '.$b.' '.$d, $chat_id);
 					}
+					die;
 				} else {					
 					$caption = back_keyboard();
 					sendMessage($chat_id, 'ok i will read your message and send you an answer✏️', $caption);
