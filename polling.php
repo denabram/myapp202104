@@ -92,6 +92,7 @@ function razbor($result)
 			case 'aback':
 				$markup = start_keyboard();
 				$message_id = sendMessage($chat_id, 'Main menu', $markup);
+				die;
 				break;
 			case 'chatid':
 				sendMessage($chat_id, $chat_id);
